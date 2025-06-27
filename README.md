@@ -15,16 +15,19 @@ Sparse MoA activates adapter experts sparsely based on their contribution, achie
 * **Soft-weighted MoE-LoRA baselines**:  HydraLoRA, MoLoRA
 * **Sparse MoE-LoRA baselines**: AdaMoLE, MoE-LoRA(TOP-K)
 * **Instance-level baselines**: Instance MoA, UniPEFT(LoRA, Prompt, Parallel adatper)
+* **Sparse MoA with AdaMOLE**: Replace each adapter in MoA with MoE-LoRA(AdaMOLE)
 * **Flash-attention2 supported**.
 
 
 ## TODO
 
 - [x] Release Soft MoA code.
-- [ ] Release Sparse MoA code.
-- [ ] Release Soft MoE-LoRA baselines (LoRA, HydraLoRA, MoLoRA)
-- [ ] Release Sparse MoE-LoRA baselines (AdaMoLE, MoE-LoRA(TOP-K))
-- [ ] Release Instance-level Baselines.
+- [x] Release Sparse MoA code.
+- [x] Release Soft MoE-LoRA baselines (LoRA, HydraLoRA, MoLoRA)
+- [x] Release Sparse MoE-LoRA baselines (AdaMoLE, MoE-LoRA(TOP-K))
+- [x] Release Instance-level Baselines.
+- [x] Release Sparse MoA with AdaMOLE.
+- [ ] Support other LLMs, such as Qwen,Gemma.
 - [ ] Release Checkpoints.
 
 
@@ -148,4 +151,4 @@ MoA utilizes [Meta version](https://huggingface.co/meta-llama/Llama-3.1-8B-Instr
     python evaluate_math.py --predict_file $save_path1
     ```
 
-## Checkpoints
+<!-- ## Checkpoints -->
